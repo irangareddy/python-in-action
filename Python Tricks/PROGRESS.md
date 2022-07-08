@@ -13,3 +13,7 @@ I began reading Python Tricks book and finished chapter, `1 Introduction`, which
 Started chapter, `2 Patterns for Cleaner Python` in this first part dicusses about the assertions. Assertions are meant to be *internal safe-checks* for your program.
 
 For now, keep in mind that Python’s assert statement is a debugging aid, not a mechanism for handling run-time errors. The goal of using assertions is to let developers find the likely root cause of a bug more quickly. An assertion error should never be raised unless there’s a bug in your program.
+
+### 2022-07-08 23:21:29
+
+Cont. `Python Assert Syntax` read about proper book implementation of assert syntax and also had introduction the bogus assert syntax
