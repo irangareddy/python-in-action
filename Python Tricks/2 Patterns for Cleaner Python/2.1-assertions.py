@@ -1,8 +1,6 @@
-# 2.1 Covering Your A** With Assertions
+"""2.1 Covering Your A** With Assertions"""
 
-# Python's assert statement is debugging aid that tests a condition either TRUE or FALSE
-
-from ast import Expression
+"""Python's assert statement is debugging aid that tests a condition either TRUE or FALSE"""
 
 
 def apply_discount(product, discount):
@@ -24,14 +22,14 @@ print(final_amount)
 # apply_discount(product=ipad,discount=2.25)
 
 
-# Python's Assert Syntax
+"""Python's Assert Syntax"""
 expression1 = 10 % 2 == 1
 expression2 = 10 % 2 == 0
 
 if __debug__ and not expression1:
     raise AssertionError(expression2)
 
-# bogus assertion: Heisenbug
+"""bogus assertion: Heisenbug"""
 cond = 'x'
 
 if cond == 'x':
