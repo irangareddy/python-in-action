@@ -11,12 +11,13 @@ def apply_discount(product, discount):
     assert 0 <= price <= product['price']
     return price
 
+
 ipad = {
-'name': 'iPad Pro 12.9 inch',
-'price': 1600
+    'name': 'iPad Pro 12.9 inch',
+    'price': 1600
 }
 
-final_amount = apply_discount(product=ipad,discount=0.15)
+final_amount = apply_discount(product=ipad, discount=0.15)
 print(final_amount)
 
 # raises AssertionError
@@ -24,20 +25,19 @@ print(final_amount)
 
 
 # Python's Assert Syntax
-expression1 = 10%2==1
-expression2 = 10%2==0
+expression1 = 10 % 2 == 1
+expression2 = 10 % 2 == 0
 
-if __debug__:
-    if not expression1:
-        raise AssertionError(expression2)
+if __debug__ and not expression1:
+    raise AssertionError(expression2)
 
 # bogus assertion: Heisenbug
 cond = 'x'
 
 if cond == 'x':
-   print('x')
+    print('x')
 elif cond == 'y':
-   print('y')
+    print('y')
 else:
     assert False, (
         'This should never happen, but it does '
