@@ -3,6 +3,8 @@ Monthly Python Tricks from RealPython Newsletter
 JULY
 """
 
+import operator
+
 """
 TOPIC: unpacking generalizations
 DATE: 2022/06/29
@@ -46,3 +48,20 @@ if a or b or c:
 
 if any((a, b, c)):
     print("PASSED")
+
+"""
+TOPIC: sort a Python dict by value
+DATE: 2022/07/01
+"""
+
+unsorted_dict = {'a': 4, 'c': 2, 'b': 3, 'd': 1}
+print(unsorted_dict)
+# 1 here represents the values
+sorted_dict = sorted(unsorted_dict.items(), key=lambda value: value[1])
+print(sorted_dict)
+
+# import operator
+sorted_dict = sorted(unsorted_dict.items(), key=operator.itemgetter(1))
+print(sorted_dict)
+
+# TODO: lamda and operator module
