@@ -65,3 +65,22 @@ sorted_dict = sorted(unsorted_dict.items(), key=operator.itemgetter(1))
 print(sorted_dict)
 
 # TODO: lamda and operator module
+
+"""
+TOPIC: The get() method on Python dict and its default args
+DATE: 2022/07/04
+"""
+name_of_userid = {
+    1: "Ranga",
+    7623: "Vikram",
+    983: "Matt Nelson",
+}
+
+
+def greeting(user_id):
+    """Greeting a user function"""
+    return "Hi %s!" % name_of_userid.get(user_id, "there")
+
+
+print(greeting(user_id=1))
+print(greeting(user_id=22))
