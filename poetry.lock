@@ -1,0 +1,15 @@
+[[package]]
+name = "phonenumbers"
+version = "8.12.52"
+description = "Python version of Google's common library for parsing, formatting, storing and validating international phone numbers."
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "26744bf346fdd1ef47871e98aba93b485460638f05e4c2a1e4ad906a5a36c84c"
+
+[metadata.files]
+phonenumbers = []
