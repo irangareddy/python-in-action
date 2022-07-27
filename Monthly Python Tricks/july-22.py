@@ -84,3 +84,19 @@ def greeting(user_id):
 
 print(greeting(user_id=1))
 print(greeting(user_id=22))
+
+"""
+TOPIC: Shorthand for in-place value swapping
+DATE: 2022/07/26
+"""
+
+a = 43
+b = 23
+
+# swap values
+temp = a
+a = b
+b = temp
+
+# shorthand
+a, b = b, a
