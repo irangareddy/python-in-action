@@ -97,6 +97,24 @@ exec_time = timeit.timeit('"-".join(str(n) for n in range(100))',
                           number=10000)
 print(exec_time)
 
+"""
+TOPIC: Function argument unpacking
+DATE: 2022/07/20
+"""
+
+
+def func_arg_unpack(m, n, o):
+    """Function argument unpacking"""
+    print(m, n, o)
+
+
+tuple_vec = (1, 0, 1)
+dict_vec = {'m': 1, 'n': 0, 'o': 2}
+# RAISES ERROR: dict_vec = {'m': 1, 'n': 0, 'z': 2}
+
+func_arg_unpack(*tuple_vec)
+func_arg_unpack(**dict_vec)
+
 # TODO: timeit https://www.geeksforgeeks.org/timeit-python-examples/
 
 """
