@@ -87,17 +87,6 @@ print(greeting(user_id=1))
 print(greeting(user_id=22))
 
 """
-TOPIC: timeit module
-DATE: 2022/07/23
-"""
-
-# import timeit
-
-exec_time = timeit.timeit('"-".join(str(n) for n in range(100))',
-                          number=10000)
-print(exec_time)
-
-"""
 TOPIC: Function argument unpacking
 DATE: 2022/07/20
 """
@@ -114,6 +103,17 @@ dict_vec = {'m': 1, 'n': 0, 'o': 2}
 
 func_arg_unpack(*tuple_vec)
 func_arg_unpack(**dict_vec)
+
+"""
+TOPIC: timeit module
+DATE: 2022/07/23
+"""
+
+# import timeit
+
+exec_time = timeit.timeit('"-".join(str(n) for n in range(100))',
+                          number=10000)
+print(exec_time)
 
 # TODO: timeit https://www.geeksforgeeks.org/timeit-python-examples/
 
