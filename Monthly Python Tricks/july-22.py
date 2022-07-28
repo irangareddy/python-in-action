@@ -2,7 +2,7 @@
 Monthly Python Tricks from RealPython Newsletter
 JULY
 """
-
+import json
 import operator
 import timeit
 
@@ -85,6 +85,22 @@ def greeting(user_id):
 
 print(greeting(user_id=1))
 print(greeting(user_id=22))
+
+"""
+TOPIC: json.dumps() to pretty print the dict
+DATE: 2022/07/17
+"""
+
+for_json_dict = {'a': 23, 'b': 42, 'c': 0xc0ffee}
+print(for_json_dict, '😔 # No Indentation')
+
+pretty_dict = json.dumps(for_json_dict, indent=4, sort_keys=True)
+print(pretty_dict)
+# Note: dict key must be from primitive types
+# RAISES ERROR: TypeError: keys must be str, int, float, bool or None, not builtin_function_or_method
+# json.dumps({all: 'yup'})
+
+# TODO: pprint module
 
 """
 TOPIC: Function argument unpacking
