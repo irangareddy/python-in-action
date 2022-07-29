@@ -5,6 +5,7 @@ JULY
 import json
 import operator
 import timeit
+from collections import namedtuple
 
 """
 TOPIC: unpacking generalizations
@@ -85,6 +86,17 @@ def greeting(user_id):
 
 print(greeting(user_id=1))
 print(greeting(user_id=22))
+
+"""
+TOPIC: NamedTuple from collections
+DATE: 2022/07/13
+"""
+
+Car = namedtuple('Car', 'color mileage seats')
+my_car = Car('red', 100, 2)
+
+print(my_car)
+print(my_car.color, my_car.mileage, my_car.seats)
 
 """
 TOPIC: json.dumps() to pretty print the dict
