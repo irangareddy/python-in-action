@@ -88,3 +88,23 @@ def delete_product(product_id, user):
         raise ValueError('Unknown product id')
     store.get_product(product_id).delete()
 """
+
+# Caveat -2 - Asserts That Never Fail
+
+"""
+raises SyntaxWarning: assert(1 == 2, 'This should fail')
+Reason: Because it asserts the truth value of a tuple object.
+"""
+
+try:
+    assert 1 == 2, 'This should fail'
+except AssertionError:
+    print('1 == 2  failed with an AssertionError')
+
+"""
+Key Takeaways
+
+* Python’s assert statement is a debugging aid that tests a condition as an internal self-check in your program.
+* Asserts should only be used to help developers identify bugs. They’re not a mechanism for handling run-time errors.
+* Asserts can be globally disabled with an interpreter setting.
+"""
