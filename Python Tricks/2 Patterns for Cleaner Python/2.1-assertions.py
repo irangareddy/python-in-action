@@ -43,7 +43,7 @@ else:
         'figure out why. Email dbader if you '
         'encounter this in the wild. Thanks!')
 
-# read more: https://dbader.org/blog/catching-bogus-python-asserts
+# TODO: https://dbader.org/blog/catching-bogus-python-asserts
 
 """
 TOPIC: Common Pitfalls With Using Asserts in Python
