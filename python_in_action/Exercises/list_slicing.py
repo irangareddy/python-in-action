@@ -1,11 +1,13 @@
-message = "Good Morning"
+"""List Slicing Example"""
 
-print(message[0:1])
-print(message[0:-1])
-print(message[11])
+MESSAGE = "Good Morning"
+
+print(MESSAGE[0:1])
+print(MESSAGE[0:-1])
+print(MESSAGE[11])
 # start = end index or start index
 # stop =  n-1
 # step = increment or decrement
-print(message[13:6:-3])
+print(MESSAGE[13:6:-3])
 
-# print(message[123]) Index Error
+# print(MESSAGE[123]) Index Error

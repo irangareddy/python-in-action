@@ -1,5 +1,5 @@
 """
-MonthlyPythonTricks from RealPython Newsletter
+Monthly_Python_Tricks from RealPython Newsletter
 AUGUST
 """
 

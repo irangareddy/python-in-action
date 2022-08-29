@@ -40,7 +40,7 @@ disable = "fixme"
 
 # https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#pylint
 [tool.pylint.messages_control]
-disable = "R0903"
+disable = ["R0903", "C0103"]
 
 [tool.pylint.format]
 max-line-length = "88"
