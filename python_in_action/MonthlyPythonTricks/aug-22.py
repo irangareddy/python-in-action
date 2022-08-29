@@ -1,5 +1,5 @@
 """
-Monthly Python Tricks from RealPython Newsletter
+MonthlyPythonTricks from RealPython Newsletter
 AUGUST
 """
 
@@ -8,7 +8,7 @@ TOPIC: Functions are first-class citizens in Python
 DATE: 2022/08/01
 
 They can be passed as arguments to other functions,
-returned as values from other functions, and 
+returned as values from other functions, and
 assigned to variables and stored in data structures.
 """
 
@@ -23,7 +23,8 @@ print(math_operations[0])
 print(math_operations[0](2, 3))
 
 """
-TOPIC: Python has first-class functions they can be used to emulate switch/case statements
+TOPIC: Python has first-class functions
+they can be used to emulate switch/case statements
 DATE: 2022/08/05
 """
 
@@ -60,7 +61,7 @@ TOPIC: Python has a HTTP server
 DATE: 2022/08/09
 
 
-Python has a HTTP server built into the standard library. 
+Python has a HTTP server built into the standard library.
 This is super handy for previewing websites
 
 Python 3.x
@@ -69,5 +70,4 @@ $ python3 -m http.server
 Python 2.x
 $ python -m SimpleHTTPServer 800
 (This will serve the current directory at http://localhost:8000)
-
 """

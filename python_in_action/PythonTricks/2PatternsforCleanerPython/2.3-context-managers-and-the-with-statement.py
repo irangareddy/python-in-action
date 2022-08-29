@@ -29,7 +29,8 @@ with some_lock:
 
 """
 Note:
-The with statement can make code that deals with system resources more readable. 
-It also helps you avoid bugs or leaks by making it practically impossible to forget
+The with statement can make code that deals with
+system resources more readable. It also helps you avoid
+bugs or leaks by making it practically impossible to forget
 to clean up or release a resource when it’s no longer needed.
 """

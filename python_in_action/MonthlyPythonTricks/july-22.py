@@ -1,5 +1,5 @@
 """
-Monthly Python Tricks from RealPython Newsletter
+MonthlyPythonTricks from RealPython Newsletter
 JULY
 """
 import json
@@ -43,7 +43,7 @@ if 1 in (a, b, c):
     print("PASSED")
 
 """
-Test for [Truthiness](https://www.pythonmorsels.com/truthiness/#:~:text=Truthiness%20is%20also%20about%20non%2Dzeroness&text=So%20if%20we%20check%20the,number%20not%20equal%20to%20zero.&text=That%20if%20statements%20prints%20no,which%20means%20zero%20is%20falsey.&text=Every%20number%20other%20than%200%20is%20truthy.)
+Test for [Truthiness](https://www.pythonmorsels.com/truthiness/#:~:text=Truthiness%20is%20also%20about%20non%2Dzeroness&text=So%20if%20we%20check%20the,number%20not%20equal%20to%20zero.&text=That%20if%20statements%20prints%20no,which%20means%20zero%20is%20falsey.&text=Every%20number%20other%20than%200%20is%20truthy.) # noqa: E501
 """
 if a or b or c:
     print("PASSED")
@@ -109,7 +109,8 @@ print(for_json_dict, '😔 # No Indentation')
 pretty_dict = json.dumps(for_json_dict, indent=4, sort_keys=True)
 print(pretty_dict)
 # Note: dict key must be from primitive types
-# RAISES ERROR: TypeError: keys must be str, int, float, bool or None, not builtin_function_or_method
+# RAISES ERROR: TypeError: keys must be
+# str, int, float, bool or None, not builtin_function_or_method
 # json.dumps({all: 'yup'})
 
 # TODO: pprint module
@@ -179,6 +180,8 @@ print(a == b)
 
 """
 Note:
- • "is" expressions evaluate to True if two variables point to the same object
- • "==" evaluates to True if the objects referred to by the variables are equal
+• "is":expressions evaluate to True
+if two variables point to the same object
+• "==": evaluates to True if the objects
+referred to by the variables are equal
 """

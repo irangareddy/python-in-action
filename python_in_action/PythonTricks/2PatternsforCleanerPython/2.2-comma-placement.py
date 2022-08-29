@@ -23,8 +23,8 @@ print(voice_assistants)
 
 """
 Reason: String literal Concatenation
-Multiple adjacent string or bytes literals (delimited by whitespace), 
-possibly using different quoting conventions, are allowed, 
+Multiple adjacent string or bytes literals (delimited by whitespace),
+possibly using different quoting conventions, are allowed,
 and their meaning is the same as their concatenation
 """
 
@@ -43,8 +43,10 @@ voice_assistants = [
 ]
 print(voice_assistants)
 
-# In Python, you can place a comma after every item in a list, dict, or set constant, including the last item.
-# That way, you can just remember to always end your lines with a comma and thus avoid the comma placement
+# In Python, you can place a comma after every item in a list,
+# dict, or set constant, including the last item.
+# That way, you can just remember to always end your
+# lines with a comma and thus avoid the comma placement
 # juggling that would otherwise be required.
 voice_assistants = [
     'Alexa',
@@ -57,6 +59,6 @@ print(voice_assistants)
 """
 Key Takeaways
 
-* Smart formatting and comma placement can make your list, dict, or set constants easier to maintain.
-* Python’s string literal concatenation feature can work to your benefit, or introduce hard-to-catch bugs.
+* Smart formatting and comma placement can make your list, dict, or set constants easier to maintain. # noqa:E501
+* Python’s string literal concatenation feature can work to your benefit, or introduce hard-to-catch bugs. # noqa:E501
 """

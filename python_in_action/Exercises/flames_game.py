@@ -1,4 +1,3 @@
-import random
 
 name_1 = 'AJAY'
 name_2 = 'PRIYA'
@@ -31,7 +30,7 @@ while len(result) > 1:
         # list slicing
         right = result[split_index + 1:]
         left = result[: split_index]
-        print(right,left)
+        print(right, left)
 
         # list concatenation
         result = right + left
@@ -40,34 +39,3 @@ while len(result) > 1:
 
         # print final result
 print("Relationship status :", result[0])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
