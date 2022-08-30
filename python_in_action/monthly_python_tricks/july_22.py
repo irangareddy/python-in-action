@@ -1,5 +1,5 @@
 """
-Monthly_Python_Tricks from RealPython Newsletter
+monthly_python_tricks from RealPython Newsletter
 JULY
 """
 import json
@@ -121,13 +121,13 @@ DATE: 2022/07/20
 """
 
 
-def func_arg_unpack(m, n, o):
+def func_arg_unpack(first, second, third):
     """Function argument unpacking"""
-    print(m, n, o)
+    print(first, second, third)
 
 
 tuple_vec = (1, 0, 1)
-dict_vec = {'m': 1, 'n': 0, 'o': 2}
+dict_vec = {'first': 1, 'second': 0, 'third': 2}
 # RAISES ERROR: dict_vec = {'m': 1, 'n': 0, 'z': 2}
 
 func_arg_unpack(*tuple_vec)
@@ -151,17 +151,17 @@ TOPIC: Shorthand for in-place value swapping
 DATE: 2022/07/26
 """
 
-a = 43
-b = 23
+FIRST = 43
+SECOND = 23
 
 # swap values
 # pylint: disable=consider-swap-variables
-temp = a
-a = b
-b = temp
+TEMP = FIRST
+FIRST = SECOND
+SECOND = FIRST
 
 # shorthand
-a, b = b, a
+FIRST, SECOND = SECOND, FIRST
 
 """
 TOPIC: "is" vs "=="

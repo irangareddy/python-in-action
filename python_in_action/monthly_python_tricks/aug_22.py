@@ -1,5 +1,5 @@
 """
-Monthly_Python_Tricks from RealPython Newsletter
+monthly_python_tricks from RealPython Newsletter
 AUGUST
 """
 
@@ -13,9 +13,9 @@ assigned to variables and stored in data structures.
 """
 
 
-def add(a, b):
+def add(first_number, second_number):
     """ returns sum of two numbers"""
-    return a + b
+    return first_number + second_number
 
 
 math_operations = [add]
@@ -26,30 +26,31 @@ print(math_operations[0](2, 3))
 TOPIC: Python has first-class functions
 they can be used to emulate switch/case statements
 DATE: 2022/08/05
+
 """
 
 
-def dispatch_if(operator, x, y):
+def dispatch_if(operator, first_value, second_value):
     """use if to switch case"""
     if operator == 'add':
-        return x + y
+        return first_value + second_value
     if operator == 'sub':
-        return x - y
+        return first_value - second_value
     if operator == 'mul':
-        return x * y
+        return first_value * second_value
     if operator == 'div':
-        return x / y
+        return first_value / second_value
 
     return None
 
 
-def dispatch_dict(operator, x, y):
+def dispatch_dict(operator, first_value, second_value):
     """use dict to switch case"""
     return {
-        'add': lambda: x + y,
-        'sub': lambda: x - y,
-        'mul': lambda: x * y,
-        'div': lambda: x / y,
+        'add': lambda: first_value + second_value,
+        'sub': lambda: first_value - second_value,
+        'mul': lambda: first_value * second_value,
+        'div': lambda: first_value / second_value,
     }.get(operator, lambda: None)()
 
 

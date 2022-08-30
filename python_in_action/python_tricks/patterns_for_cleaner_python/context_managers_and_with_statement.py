@@ -1,7 +1,7 @@
 """2.3 Context Managers and the with Statement"""
 import threading
 
-with open('message.txt', 'w') as f:
+with open('message.txt', 'w', encoding="utf-8") as f:
     f.write('Hello World!')
 
 """
@@ -17,7 +17,7 @@ finally:
 some_lock = threading.Lock()
 
 # Harmful:
-some_lock.acquire()
+# some_lock.acquire()
 try:
     print('Inside Try')
 finally:

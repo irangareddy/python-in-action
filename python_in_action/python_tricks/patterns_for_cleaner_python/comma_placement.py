@@ -28,11 +28,11 @@ possibly using different quoting conventions, are allowed,
 and their meaning is the same as their concatenation
 """
 
-long_message = ('This is a super long string constant '
+LONG_MESSAGE = ('This is a super long string constant '
                 'spread out across multiple lines. '
                 'And look, no backslash characters needed!')
 
-print(long_message)
+print(LONG_MESSAGE)
 
 # Fix for String literal Concatenation issue
 voice_assistants = [

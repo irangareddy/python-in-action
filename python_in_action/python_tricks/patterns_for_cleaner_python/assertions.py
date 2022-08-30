@@ -26,18 +26,18 @@ print(final_amount)
 
 
 """Python's Assert Syntax"""
-expression1 = 10 % 2 == 0
-expression2 = 10 % 2 == 1
+EXPRESSION1 = 10 % 2 == 0
+EXPRESSION2 = 10 % 2 == 1
 
-if __debug__ and not expression1:
-    raise AssertionError(expression2)
+if __debug__ and not EXPRESSION1:
+    raise AssertionError(EXPRESSION2)
 
 """bogus assertion: Heisenbug"""
-cond = 'x'
+CONDITION = 'x'
 
-if cond == 'x':
+if CONDITION == 'x':
     print('x')
-elif cond == 'y':
+elif CONDITION == 'y':
     print('y')
 else:
     assert False, (
@@ -102,9 +102,9 @@ def delete_product(product_id, user):
 raises SyntaxWarning: assert(1 == 2, 'This should fail')
 Reason: Because it asserts the truth value of a tuple object.
 """
-
+FIXED_VALUE = 2
 try:
-    assert 1 == 2, 'This should fail'
+    assert 1 == FIXED_VALUE, 'This should fail'
 except AssertionError:
     print('1 == 2  failed with an AssertionError')
 
