@@ -15,7 +15,7 @@ list_1 = convert(BOY_NAME)
 list_2 = convert(GIRL_NAME)
 
 
-def modify_list(list_one, list_two) -> [[], []]:
+def modify_list(list_one, list_two):
     """remove same element from two lists"""
     for i in list_1:
         for j in list_2:

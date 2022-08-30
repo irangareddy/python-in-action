@@ -8,10 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 phonenumbers = "^8.12.52"
-pytest = "^7.0"
-pytest-cov = "^3.0.0"
 black = "^22.1.0"
-bandit = "^1.7.2"
 pylint-junit = "^0.3.2"
 safety = "^1.10.3"
 genbadge = "^1.0.6"
@@ -40,7 +37,7 @@ disable = "fixme"
 
 # https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#pylint
 [tool.pylint.messages_control]
-disable = ["R0903", "C0103"]
+disable = ["R0903", "C0103", "W0105"]
 
 [tool.pylint.format]
 max-line-length = "88"

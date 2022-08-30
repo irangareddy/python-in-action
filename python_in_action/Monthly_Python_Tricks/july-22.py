@@ -62,7 +62,7 @@ print(unsorted_dict)
 sorted_dict = sorted(unsorted_dict.items(), key=lambda value: value[1])
 print(sorted_dict)
 
-# import operator
+# importing operator
 sorted_dict = sorted(unsorted_dict.items(), key=operator.itemgetter(1))
 print(sorted_dict)
 
@@ -81,7 +81,7 @@ name_of_userid = {
 
 def greeting(user_id):
     """Greeting a user function"""
-    return "Hi %s!" % name_of_userid.get(user_id, "there")
+    return f'Hello, {user_id}'
 
 
 print(greeting(user_id=1))
@@ -138,7 +138,7 @@ TOPIC: timeit module
 DATE: 2022/07/23
 """
 
-# import timeit
+# importing timeit
 
 exec_time = timeit.timeit('"-".join(str(n) for n in range(100))',
                           number=10000)
@@ -155,6 +155,7 @@ a = 43
 b = 23
 
 # swap values
+# pylint: disable=consider-swap-variables
 temp = a
 a = b
 b = temp
@@ -167,16 +168,16 @@ TOPIC: "is" vs "=="
 DATE: 2022/07/29
 """
 
-a = [1, 2, 3]
-b = a
+list_of_integers = [1, 2, 3]
+list_of_copy = list_of_integers
 
-print(a is b)
-print(a == b)
+print(list_of_copy is list_of_integers)
+print(list_of_copy == list_of_integers)
 
-c = list(a)
+listed_copy = list(list_of_integers)
 
-print(a is c)
-print(a == b)
+print(listed_copy is list_of_integers)
+print(listed_copy == list_of_integers)
 
 """
 Note:

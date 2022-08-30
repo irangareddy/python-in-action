@@ -30,19 +30,21 @@ DATE: 2022/08/05
 
 
 def dispatch_if(operator, x, y):
+    """use if to switch case"""
     if operator == 'add':
         return x + y
-    elif operator == 'sub':
+    if operator == 'sub':
         return x - y
-    elif operator == 'mul':
+    if operator == 'mul':
         return x * y
-    elif operator == 'div':
+    if operator == 'div':
         return x / y
-    else:
-        return None
+
+    return None
 
 
 def dispatch_dict(operator, x, y):
+    """use dict to switch case"""
     return {
         'add': lambda: x + y,
         'sub': lambda: x - y,
