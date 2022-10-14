@@ -22,9 +22,14 @@ class Rectangle:
         """returns the perimeter"""
         return 4 * self.length
 
+    def what_am_i(self):
+        """returns the type of the object"""
+        return '📸 RECTANGLE'
+
 
 big_box = Rectangle(length=4, width=8)
-print(f'The big box of length {big_box.length} and width {big_box.width} '
+print(f'{big_box.what_am_i()}: The big box of length'
+      f' {big_box.length} and width {big_box.width} '
       f'has area: {big_box.area()} and perimeter: {big_box.perimeter()}')
 
 """
@@ -42,10 +47,40 @@ class Square(Rectangle):
 
     def what_am_i(self):
         """returns the type of the object"""
-        return 'Square'
+        return '⬜ SQUARE'
 
 
 box = Square(length=4)
-print(f'The box of length {box.length} '
+print(f'{box.what_am_i()}: The box of length {box.length}'
       f'has area: {box.area()} and perimeter: {box.perimeter()}')
-print(dir(Square))
+
+
+class Cube(Square):
+    """ Shape: Cube """
+
+    def surface_area(self):
+        """ Returns surface area """
+        area = self.area()
+        return area * 6
+
+    def volume(self):
+        """ Returns Volume """
+        area = super().area()
+        return area * self.length
+
+    def what_am_i(self):
+        """returns the type of the object"""
+        return '📦 CUBE'
+
+    def family_tree(self):
+        """returns the family tree"""
+        return self.what_am_i() + ' child of ' + super().what_am_i()
+
+
+full_box = Cube(length=24)
+print(f'{full_box.what_am_i()}: The box of length'
+      f' {full_box.length} has area: {full_box.area()} perimeter:'
+      f' {full_box.perimeter()}, surface area: {full_box.surface_area()}'
+      f' and volume: {full_box.volume()}')
+
+print(full_box.family_tree())
