@@ -45,7 +45,12 @@ tasks:
       - check:mypy
       - check:pylint
       - check:safety
-
+    cmds:
+      - poetry run python {{.FILE}}
+    vars:
+      FILE:
+        sh: git ls-files --other --modified --exclude-standard
+    ignore_error: true
 
   check:pylint:
     desc: Check source code with pylint.
