@@ -1,8 +1,8 @@
 """2.3 Context Managers and the with Statement"""
 import threading
 
-with open('message.txt', 'w', encoding="utf-8") as f:
-    f.write('Hello World!')
+with open("message.txt", "w", encoding="utf-8") as f:
+    f.write("Hello World!")
 
 """
 Internally, the above code sample translates to something like this:
@@ -19,13 +19,13 @@ some_lock = threading.Lock()
 # Harmful:
 # some_lock.acquire()
 try:
-    print('Inside Try')
+    print("Inside Try")
 finally:
     some_lock.release()
 
 # Better:
 with some_lock:
-    print('using with while threading')
+    print("using with while threading")
 
 """
 Note:

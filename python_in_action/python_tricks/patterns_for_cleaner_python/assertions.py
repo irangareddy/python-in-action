@@ -7,16 +7,13 @@ aid that tests a condition either TRUE or FALSE
 
 
 def apply_discount(product, discount):
-    """ apply discount for a product with specified discount """
-    price = int(product['price'] * (1.0 - discount))
-    assert 0 <= price <= product['price']
+    """apply discount for a product with specified discount"""
+    price = int(product["price"] * (1.0 - discount))
+    assert 0 <= price <= product["price"]
     return price
 
 
-ipad = {
-    'name': 'iPad Pro 12.9 inch',
-    'price': 1600
-}
+ipad = {"name": "iPad Pro 12.9 inch", "price": 1600}
 
 final_amount = apply_discount(product=ipad, discount=0.15)
 print(final_amount)
@@ -33,18 +30,19 @@ if __debug__ and not EXPRESSION1:
     raise AssertionError(EXPRESSION2)
 
 """bogus assertion: Heisenbug"""
-CONDITION = 'x'
+CONDITION = "x"
 
-if CONDITION == 'x':
-    print('x')
-elif CONDITION == 'y':
-    print('y')
+if CONDITION == "x":
+    print("x")
+elif CONDITION == "y":
+    print("y")
 else:
     assert False, (
-        'This should never happen, but it does '
-        'occasionally. We are currently trying to '
-        'figure out why. Email dbader if you '
-        'encounter this in the wild. Thanks!')
+        "This should never happen, but it does "
+        "occasionally. We are currently trying to "
+        "figure out why. Email dbader if you "
+        "encounter this in the wild. Thanks!"
+    )
 
 # TODO: https://dbader.org/blog/catching-bogus-python-asserts
 
@@ -104,9 +102,9 @@ Reason: Because it asserts the truth value of a tuple object.
 """
 FIXED_VALUE = 2
 try:
-    assert 1 == FIXED_VALUE, 'This should fail'
+    assert 1 == FIXED_VALUE, "This should fail"
 except AssertionError:
-    print('1 == 2  failed with an AssertionError')
+    print("1 == 2  failed with an AssertionError")
 
 """
 Key Takeaways

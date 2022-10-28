@@ -14,7 +14,7 @@ assigned to variables and stored in data structures.
 
 
 def add(first_number, second_number):
-    """ returns sum of two numbers"""
+    """returns sum of two numbers"""
     return first_number + second_number
 
 
@@ -32,13 +32,13 @@ DATE: 2022/08/05
 
 def dispatch_if(operator, first_value, second_value):
     """use if to switch case"""
-    if operator == 'add':
+    if operator == "add":
         return first_value + second_value
-    if operator == 'sub':
+    if operator == "sub":
         return first_value - second_value
-    if operator == 'mul':
+    if operator == "mul":
         return first_value * second_value
-    if operator == 'div':
+    if operator == "div":
         return first_value / second_value
 
     return None
@@ -47,17 +47,17 @@ def dispatch_if(operator, first_value, second_value):
 def dispatch_dict(operator, first_value, second_value):
     """use dict to switch case"""
     return {
-        'add': lambda: first_value + second_value,
-        'sub': lambda: first_value - second_value,
-        'mul': lambda: first_value * second_value,
-        'div': lambda: first_value / second_value,
+        "add": lambda: first_value + second_value,
+        "sub": lambda: first_value - second_value,
+        "mul": lambda: first_value * second_value,
+        "div": lambda: first_value / second_value,
     }.get(operator, lambda: None)()
 
 
-print(dispatch_if('add', 5, 1))
-print(dispatch_dict('add', 5, 1))
-print(dispatch_if('unknown', 5, 1))
-print(dispatch_dict('unknown', 5, 1))
+print(dispatch_if("add", 5, 1))
+print(dispatch_dict("add", 5, 1))
+print(dispatch_if("unknown", 5, 1))
+print(dispatch_dict("unknown", 5, 1))
 
 """
 TOPIC: Python has a HTTP server

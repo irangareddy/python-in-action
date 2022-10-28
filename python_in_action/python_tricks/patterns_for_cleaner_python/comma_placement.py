@@ -13,12 +13,7 @@ voice_assistants = [
 """
 
 # Adding name without comma placement
-voice_assistants = [
-    'Alexa',
-    'Siri',
-    'Bixby'
-    'Ranga'
-]
+voice_assistants = ["Alexa", "Siri", "Bixby" "Ranga"]
 print(voice_assistants)
 
 """
@@ -28,19 +23,16 @@ possibly using different quoting conventions, are allowed,
 and their meaning is the same as their concatenation
 """
 
-LONG_MESSAGE = ('This is a super long string constant '
-                'spread out across multiple lines. '
-                'And look, no backslash characters needed!')
+LONG_MESSAGE = (
+    "This is a super long string constant "
+    "spread out across multiple lines. "
+    "And look, no backslash characters needed!"
+)
 
 print(LONG_MESSAGE)
 
 # Fix for String literal Concatenation issue
-voice_assistants = [
-    'Alexa',
-    'Siri',
-    'Bixby',
-    'Ranga'
-]
+voice_assistants = ["Alexa", "Siri", "Bixby", "Ranga"]
 print(voice_assistants)
 
 # In Python, you can place a comma after every item in a list,
@@ -49,10 +41,10 @@ print(voice_assistants)
 # lines with a comma and thus avoid the comma placement
 # juggling that would otherwise be required.
 voice_assistants = [
-    'Alexa',
-    'Siri',
-    'Bixby',
-    'Ranga',
+    "Alexa",
+    "Siri",
+    "Bixby",
+    "Ranga",
 ]
 print(voice_assistants)
 
