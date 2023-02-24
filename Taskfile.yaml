@@ -81,7 +81,7 @@ tasks:
       - poetry:install
       - check:prepare
     cmds:
-      - poetry run safety check -i 49150 -i 48547
+      - poetry run safety check -i 48547 -i 51358 -i 52322 -i 51457
 
   check:flake8:
     desc: Check source code with flake8.

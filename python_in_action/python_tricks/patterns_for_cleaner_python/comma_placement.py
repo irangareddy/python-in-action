@@ -13,6 +13,7 @@ voice_assistants = [
 """
 
 # Adding name without comma placement
+# pylint: disable=implicit-str-concat
 voice_assistants = ["Alexa", "Siri", "Bixby" "Ranga"]
 print(voice_assistants)
 
