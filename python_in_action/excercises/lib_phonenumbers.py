@@ -16,12 +16,14 @@ temp_phonenumbers = [
 for number in temp_phonenumbers:
     result = phonenumbers.parse(number)
     print(f"national_number: {result.national_number}")
-    print(f"number_of_leading_zeros:" f" {result.number_of_leading_zeros}")
+    print(f"number_of_leading_zeros: "
+          f"{result.number_of_leading_zeros}")
     print(f"extension: {result.extension}")
     print(f"raw_input: {result.raw_input}")
     print(f"country_code: {result.country_code}")
     print(
-        f"preferred_domestic_carrier_code: " f"{result.preferred_domestic_carrier_code}"
+        f"preferred_domestic_carrier_code: "
+        f"{result.preferred_domestic_carrier_code}"
     )
     print(f"italian_leading_zero: {result.italian_leading_zero}")
     print(f"{result} and type: {type(result)}")

@@ -18,6 +18,10 @@ mypy = "^0.931"
 coverage = "^6.3.2"
 defusedxml = "^0.7.1"
 pylint = "^2.14.2"
+pytest = "^7.2.1"
+tinydb = "^4.7.1"
+typer = "^0.7.0"
+rich = "^13.2.0"
 
 [tool.poetry.dev-dependencies]
 

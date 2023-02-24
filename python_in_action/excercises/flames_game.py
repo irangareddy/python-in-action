@@ -35,7 +35,7 @@ while len(result) > 1:
     if SPLIT_INDEX >= 0:
 
         # list slicing
-        right = result[SPLIT_INDEX + 1 :]
+        right = result[SPLIT_INDEX + 1:]
         left = result[:SPLIT_INDEX]
         print(right, left)
 
